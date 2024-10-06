@@ -7,8 +7,6 @@ This project aims to predict seizures in dogs using Electroencephalogram (EEG) d
 - [Overview](#overview)
 - [Data Sources](#data-sources)
 - [Requirements](#requirements)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
 - [Model Training](#model-training)
 - [Evaluation](#evaluation)
 - [Results](#results)
@@ -49,34 +47,6 @@ You can install the required packages using pip:
 pip install numpy pandas scipy matplotlib seaborn tensorflow scikit-learn
 ```
 
-## Project Structure
-
-```
-.
-├── README.md               # Project documentation
-├── main.py                 # Main script for running the model
-├── utils.py                # Utility functions for feature extraction and data processing
-├── models.py               # Model definitions for CNN and LSTM
-└── data/                   # Directory containing EEG data
-```
-
-## Usage
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your_username/seizure_prediction.git
-cd seizure_prediction
-```
-
-2. Ensure you have the necessary data files in the correct directory structure.
-
-3. Run the main script to start the training and evaluation process:
-
-```bash
-python main.py
-```
-
 ## Model Training
 
 The LSTM model is defined in the `create_lstm_model` function. The model consists of several LSTM layers followed by dense layers, using dropout and batch normalization for regularization. The training history is plotted to visualize the model performance over epochs.
@@ -93,11 +63,3 @@ Results will be printed to the console after the evaluation, including:
 - Recall
 - Precision
 - Confusion matrix values (TP, TN, FP, FN)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
-
-## License
-
-This project is licensed under the MIT License.
